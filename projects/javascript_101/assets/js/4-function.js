@@ -121,6 +121,10 @@ myTimer();
 
 var myTime = setInterval(myTimer, 1000);
 
-document.getElementsByTagName("button")[0].addEventListener("click", function(){
+document.getElementsByTagName("button")[0].addEventListener("mouseenter", function(){
     clearInterval(myTime);
 });
+
+document.querySelector("button").addEventListener("mouseleave", function() {
+    myTime = setInterval(myTimer,1000);
+})
