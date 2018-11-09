@@ -92,7 +92,7 @@ function localScope(){
     console.log(showScope);
 }
 
-vae showScopeY = 99;
+var showScopeY = 99;
 function localScopeY(){
     showScopeY = 100;
     console.log(showScopeY);
@@ -100,3 +100,27 @@ function localScopeY(){
 
 console.log(showScopeY)
 localScopeY();
+
+function sing(){
+    console.log("I'm singing in the rain!");
+    console.log("It's funny on a sunny day!");
+}
+
+// setInterval(sing, 2500);
+
+// var anon = setInterval(function(){
+    // console.log("I'm an anonomys function");
+// }, 3000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("output").innerHTML = d.toLocaleTimeString();
+}
+
+myTimer();
+
+var myTime = setInterval(myTimer, 1000);
+
+document.getElementsByTagName("button")[0].addEventListener("click", function(){
+    clearInterval(myTime);
+});
