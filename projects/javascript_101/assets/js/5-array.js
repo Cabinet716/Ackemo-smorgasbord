@@ -61,3 +61,48 @@ for (var i = 0; i < cars.length; i++){
 
 // Arrays - iteration - forEach
 
+var countries = ["Sweden", "Norway", "Finland", "Denmark", "Island"];
+countries.forEach(function(country){
+    console.log(country);
+});
+
+function countryList(country){
+    console.log("**********");
+    console.log(country);
+    console.log("**********");
+    console.log("");
+}
+
+countries.forEach(countryList);
+
+// Array skriftlig övning
+/*
+var notReversed = [1, 2, 3, 4, 5];
+
+console.log(notReversed);
+
+notReversed.reverse();
+
+console.log(notReversed);*/
+
+
+function printReverse(myArr){
+    for(var i = myArr.length -1; i >= 0; i--){
+        console.log(myArr[i]);;
+    }
+};
+
+printReverse([1,2,3,4,5])
+
+
+function isIdentical(array) {
+    var myArray = [1,1,1,1];
+    for(var i = 0; i < array.length - 1; i++) {
+        if(array[i] !== array[i+1]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+isIdentical();
