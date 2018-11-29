@@ -96,13 +96,35 @@ printReverse([1,2,3,4,5])
 
 
 function isIdentical(array) {
-    var myArray = [1,1,1,1];
-    for(var i = 0; i < array.length - 1; i++) {
-        if(array[i] !== array[i+1]) {
+    var first = array[0];
+    for(var i = 1; i < array.length; i++) {
+        if(array[i] !== first) {
             return false;
         }
     }
     return true;
 }
 
-isIdentical();
+console.log(isIdentical([1,1,1,1,1]));
+console.log(isIdentical([1,1,1,1,2]));
+
+function sumArray(array){
+    var summary = 0;
+    for(var i = 0; i < array.length; i++) {
+        summary = summary += array[i];
+    }
+    return summary;
+}
+console.log(sumArray([1,5,123,4,2,1]));
+
+function max(array){
+    var max = 0;
+    for(var i = 0; i < array.length; i++) {
+        if(max < array[i])
+        {
+            max = array[i];
+        }
+    }
+    return max;
+}
+console.log(max([1,5,123,4,2,1]));
