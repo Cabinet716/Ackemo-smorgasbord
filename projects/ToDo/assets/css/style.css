@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+body {
+    background-color: #fff;
+}
+.task {
+    margin-left: 40%;
+    font-size: 2vmax;
+}
+
+.add {
+    font-size: 2vmax;
+}
+
+.todos {
+    background-color: gray;
+}
