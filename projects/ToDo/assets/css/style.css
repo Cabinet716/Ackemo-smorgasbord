@@ -3,6 +3,10 @@
 body {
     background-color: #fff;
 }
+h1 {
+    margin-left: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 #task {
     margin-left: 40%;
     font-size: 2vmax;
@@ -10,8 +14,20 @@ body {
 
 #add {
     font-size: 2vmax;
+    margin: 0;
 }
 
 #todos {
-    background: white;
+    font-size: 1.5vmax;
+    background: rgb(167, 167, 167);
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+button {
+    border-radius: 60%;
 }
