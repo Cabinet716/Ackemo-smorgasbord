@@ -1,0 +1,129 @@
+@charset 'utf-8';
+
+body {
+      background:#cacaca;
+}
+
+.main-header {
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 2.2vmax;
+    background: #494949;
+    border-radius: 100px;
+}
+
+.main-header h1 {
+    color: #ffffff;
+}
+
+.mobile {
+    display: none;
+}
+
+.wrapper {
+    background: #494949;
+    width: auto;
+    height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 50px;
+    margin: 85px;
+    padding: 50px;
+    display: grid;
+    grid-gap: 2.5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "a1 a2"
+        "b1 b2"
+        "c1 c2"
+        "d1 d2";
+}
+
+@media screen and (max-width:478px) {
+    body {
+        margin: 0;
+    } 
+    .main-header{
+      margin-bottom: 15px;  
+    }
+    
+    .main-header h1 {
+      margin-bottom: 0;
+    }
+    
+    .mobile {
+        display: block;
+        font-size: 2vmax;
+        color: white;
+        margin-top: 0px;
+        font-family: "Offspring";
+    }
+    
+    .wrapper {
+        background: none;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (6, auto);
+        grid-template-areas:
+            "a1"
+            "a2"
+            "b1"
+            "b2"
+            "c1"
+            "c2"
+            "d1"
+            "d2";
+        font-size: 4vmax;
+    }
+}
+
+.wrapper a {
+    font-size: 3vmax;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    transition-duration: 1s;
+}
+
+.wrapper p {
+    font-size: 1vmax;
+}
+
+.pro_item1 {
+    background: #494949;
+    transition: background 0.5s;
+    grid-area: a2;
+    font-family: monospace;
+    border-radius: 40px;
+}
+
+.pro_item1:hover {
+    background: #cacaca;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.pro_item2{
+    background: #494949;
+    transition: background 0.5s;
+    grid-area: a1;
+    font-family: monospace;
+    border-radius: 40px;
+}
+
+.pro_item2:hover {
+    background: #cacaca;
+    color: #000000;
+    transform: scale(1.05);
+}
