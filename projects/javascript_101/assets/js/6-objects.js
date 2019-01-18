@@ -79,3 +79,23 @@ console.log(posts[1].comments[1]);
 for(var i = 0; i < posts.length; i++) {
     console.log(posts[i].title, posts[i].name, posts[i].comments)
 }
+
+// ********************************Uppgift*************************************
+var movies = [
+    {
+        title: "Guardians of the galaxy",
+        rank: "8,1/10 stars",
+        seen: "You have seen it"
+    },
+    {
+        title: "Avengers: Infinity war",
+        rank: "9,5/10 stars",
+        seen: "You have not seen it"
+    },
+    {
+        title: "Iron man 3",
+        rank: "7,2/10 stars",
+        seen: "You have seen it"
+    }
+];
+
