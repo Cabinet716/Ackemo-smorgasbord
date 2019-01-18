@@ -1,3 +1,4 @@
+/*
 // var person = ["Adam", 18, "unknown"];
 // console.log(person[2]);
 
@@ -79,23 +80,36 @@ console.log(posts[1].comments[1]);
 for(var i = 0; i < posts.length; i++) {
     console.log(posts[i].title, posts[i].name, posts[i].comments)
 }
-
+*/
 // ********************************Uppgift*************************************
 var movies = [
     {
         title: "Guardians of the galaxy",
         rank: "8,1/10 stars",
-        seen: "You have seen it"
+        seen:  true
     },
     {
         title: "Avengers: Infinity war",
         rank: "9,5/10 stars",
-        seen: "You have not seen it"
+        seen: false
     },
     {
         title: "Iron man 3",
         rank: "7,2/10 stars",
-        seen: "You have seen it"
+        seen: true
     }
 ];
-
+if (seen == true)
+   {
+       for(var i = 0; i < movies.length; i++)
+   {
+       console.log(movies[i].title, movies[i].rank, "you have seen it!")
+   }
+   }
+   else
+   {
+       for(var i = 0; i < movies.length; i++)
+   {
+       console.log(movies[i].title, movies[i].rank, "You have not seen it!")
+   }
+}
