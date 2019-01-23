@@ -100,10 +100,12 @@ var movies = [
     }
 ];
 movies.forEach(function(movie) {
-    if (movie.seen == true) {
-    console.log("The title is " + movie.title + ", it has a rating of " + movie.rank +" and you have seen it")
+    if (movie.seen == true) 
+    {
+        console.log("The title is " + movie.title + ", it has a rating of " + movie.rank +" and you have seen it")
     }
-    else{
+    else
+    {
         console.log("The title is " + movie.title + ", it has a rating of " + movie.rank +" and you have not seen it")
     }
 });
