@@ -99,17 +99,11 @@ var movies = [
         seen: true
     }
 ];
-if (seen == true)
-   {
-       for(var i = 0; i < movies.length; i++)
-   {
-       console.log(movies[i].title, movies[i].rank, "you have seen it!")
-   }
-   }
-   else
-   {
-       for(var i = 0; i < movies.length; i++)
-   {
-       console.log(movies[i].title, movies[i].rank, "You have not seen it!")
-   }
-}
+movies.forEach(function(movie) {
+    if (movie.seen == true) {
+    console.log("The title is " + movie.title + ", it has a rating of " + movie.rank +" and you have seen it")
+    }
+    else{
+        console.log("The title is " + movie.title + ", it has a rating of " + movie.rank +" and you have not seen it")
+    }
+});
