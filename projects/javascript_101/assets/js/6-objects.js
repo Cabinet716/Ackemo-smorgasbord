@@ -99,7 +99,9 @@ var movies = [
         seen: true
     }
 ];
-movies.forEach(function(movie) {
+
+function movie(movie)
+{
     if (movie.seen == true) 
     {
         console.log("The title is " + movie.title + ", it has a rating of " + movie.rank +" and you have seen it")
@@ -108,4 +110,6 @@ movies.forEach(function(movie) {
     {
         console.log("The title is " + movie.title + ", it has a rating of " + movie.rank +" and you have not seen it")
     }
-});
+}
+
+movies.forEach(movie);
