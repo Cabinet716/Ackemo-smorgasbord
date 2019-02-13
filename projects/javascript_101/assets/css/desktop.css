@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body {
+    background: #53525f;
+    color: #fff;
+    padding: 30px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+.some-class {
+    color: orange;
+    letter-spacing: 2px;
+    transform: rotate(180deg);
+    font-style: italic;
+}
+.wierd-class {
+    color: #44ff66;
+    font-family: monospace;
+    animation: glitch 1s infinite;
+}
