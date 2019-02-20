@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pic Game</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<header class="main-header">
+    <h1>The <strong>GREAT</strong> Game</h1>
+    <h2>Pick the rgb colour (<span id="random">...</span>)</h2>
+    <h2>Good luck!</h2>
+    <h3 id="rorw"></h3>
+</header>
+<body>
+        <button onclick="document.getElementById('random').innerHTML = getRndNmbrs(0,256)">Random Colours</button>
+        <div>
+            <ul>
+                <li id="nr1"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
