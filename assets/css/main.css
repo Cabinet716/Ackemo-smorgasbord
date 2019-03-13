@@ -131,7 +131,7 @@ body {
 .pro_item3{
     background: #494949;
     transition: background 0.5s;
-    grid-area: b1;
+    grid-area: b2;
     font-family: monospace;
     border-radius: 40px;
 }
@@ -151,6 +151,33 @@ body {
 }
 
 .pro_item4:hover {
+    background: #cacaca;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+.pro_item5{
+    background: #494949;
+    transition: background 0.5s;
+    grid-area: c1;
+    font-family: monospace;
+    border-radius: 40px;
+}
+
+.pro_item5:hover {
+    background: #cacaca;
+    color: #000000;
+    transform: scale(1.05);
+}
+.pro_item6{
+    background: #494949;
+    transition: background 0.5s;
+    grid-area: c2;
+    font-family: monospace;
+    border-radius: 40px;
+}
+
+.pro_item6:hover {
     background: #cacaca;
     color: #000000;
     transform: scale(1.05);
