@@ -10,30 +10,64 @@
 <header class="main-header">
     <h1>This is a fooni playground!</h1>
 </header>
-<body>
+<body id="body" class="dark-mode">
     <div class="wrapper">
         <section class="square_1">
-            <p>Lightbox</p>
+            <div class="row">
+                <p>Lightbox</p>
+                <div class="column">
+                    <img src="" alt="">
+                </div>
+            </div>
         </section>
     
         <section class="square_2">
-            <canvas id="canvasClock" width="300" height="300" style="background-color:black"></canvas>
+            <canvas id="canvasClock" width="300" height="300"></canvas>
         </section>
     
         <section class="square_3">
-            <p>Nav toggle</p>
+            <div class="calculator">
+                <input type="text" class="calculator-screen" value="" disabled />
+
+                <div class="calculator-keys">
+                    <button type="button" class="operator" value="+">+</button>
+                    <button type="button" class="operator" value="-">-</button>
+                    <button type="button" class="operator" value="*">&times;</button>
+                    <button type="button" class="operator" value="/">&divide;</button>
+
+                    <button type="button" class="number" value="7">7</button>
+                    <button type="button" class="number" value="8">8</button>
+                    <button type="button" class="number" value="9">9</button>
+
+                    <button type="button" class="number" value="4">4</button>
+                    <button type="button" class="number" value="5">5</button>
+                    <button type="button" class="number" value="6">6</button>
+
+                    <button type="button" class="number" value="1">1</button>
+                    <button type="button" class="number" value="2">2</button>
+                    <button type="button" class="number" value="3">3</button>
+
+                    <button type="button" class="number" value="0">0</button>
+                    <button type="button" class="decimal" value=".">.</button>
+                    <button type="button" class="clear" value="clear">C</button>
+
+                    <button type="button" class="equal operator" value="=">=</button>
+
+                </div>
+            </div>
         </section>
     
         <section class="square_4">
-            <p>Slideshow</p>
+            <p>Toggle dark/lightmode</p>
+            <button type="button" class="tglButton" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
         </section>
     
         <section class="square_5">
-            <p>Idle Game</p>
+            <p></p>
         </section>
     
         <section class="square_6">
-            <p>Bouncy ballz</p>
+            <p></p>
         </section>
     </div>
     <script src="assets/js/playground.js"></script>
