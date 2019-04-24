@@ -137,3 +137,11 @@ body.light-mode button {
 	grid-gap: 20px;
 	padding: 20px;
 }
+.square_6 h3 {
+	margin-top: 0;
+}
+
+.mush {
+	width: 50%;
+	height: 50%;
+}
