@@ -1,32 +1,24 @@
 @charset 'utf-8';
 
-body {
-	background: #283c86; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #45a247, #283c86);
-	background: linear-gradient(to left, #45a247, #283c86);
-}
-/* body.dark-mode {
-	background-color: #111;
-	color: #eee;
+body.dark-mode {
+	background: linear-gradient(to left, #153116, #0f1631);
+
 }
 body.dark-mode a {
 	color: #111;
 }
-body.dark-mode button {
+body.dark-mode .tglButton {
 	background-color: #eee;
 	color: #111;
 }
 body.light-mode {
-	background-color: #eee;
-	color: #111;
+	background: linear-gradient(to left, #45a247, #283c86);
+
 }
-body.light-mode a {
-	color: #111;
-}
-body.light-mode button {
+body.light-mode .tglButton {
 	background-color: #111;
 	color: #eee;
-} */
+}
 .main-header {
 	height: auto;
 	width: 80%;
@@ -137,6 +129,7 @@ body.light-mode button {
 	grid-gap: 20px;
 	padding: 20px;
 }
+<<<<<<< HEAD
 .square_6 h3 {
 	margin-top: 0;
 }
@@ -145,3 +138,11 @@ body.light-mode button {
 	width: 50%;
 	height: 50%;
 }
+=======
+
+.tglButton {
+	font-size: 2vmax;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+>>>>>>> 1502c3a8fcb196368d87de98a6f62c4f7d1a7ae4
