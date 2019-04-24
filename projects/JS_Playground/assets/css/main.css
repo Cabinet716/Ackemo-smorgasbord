@@ -2,7 +2,6 @@
 
 body.dark-mode {
 	background: linear-gradient(to left, #153116, #0f1631);
-
 }
 body.dark-mode a {
 	color: #111;
@@ -13,7 +12,6 @@ body.dark-mode .tglButton {
 }
 body.light-mode {
 	background: linear-gradient(to left, #45a247, #283c86);
-
 }
 body.light-mode .tglButton {
 	background-color: #111;
@@ -129,7 +127,6 @@ body.light-mode .tglButton {
 	grid-gap: 20px;
 	padding: 20px;
 }
-<<<<<<< HEAD
 .square_6 h3 {
 	margin-top: 0;
 }
@@ -138,11 +135,3 @@ body.light-mode .tglButton {
 	width: 50%;
 	height: 50%;
 }
-=======
-
-.tglButton {
-	font-size: 2vmax;
-	padding-left: 50px;
-	padding-right: 50px;
-}
->>>>>>> 1502c3a8fcb196368d87de98a6f62c4f7d1a7ae4
