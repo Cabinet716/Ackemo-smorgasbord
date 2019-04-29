@@ -170,9 +170,20 @@ body.light-mode .tglButton {
 	grid-gap: 20px;
 	padding: 20px;
 }
+<<<<<<< HEAD
+.square_6 h3 {
+	margin-top: 0;
+}
+
+.mush {
+	width: 50%;
+	height: 50%;
+}
+=======
 
 .tglButton {
 	font-size: 2vmax;
 	padding-left: 50px;
 	padding-right: 50px;
 }
+>>>>>>> 1502c3a8fcb196368d87de98a6f62c4f7d1a7ae4
