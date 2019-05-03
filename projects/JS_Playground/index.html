@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="sv-se">
+
 <head>
     <meta charset="UTF-8">
-    
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Playground</title>
     <link rel="stylesheet" href="assets/css/main.css">
@@ -10,21 +11,61 @@
 <header class="main-header">
     <h1>This is a fooni playground!</h1>
 </header>
+
 <body id="body" class="dark-mode">
     <div class="wrapper">
         <section class="square_1">
-            <div class="row">
-                <p>Lightbox</p>
-                <div class="column">
-                    <img src="" alt="">
+            <div class="images-row-1">
+                <div>
+                    <img src="assets/images/cool-dog.jpg" onclick="openModal();currentSlide(1)" style="width:50%"
+                        alt="A very cool dog" class="image-shadow">
+                </div>
+                <div>
+                    <img src="assets/images/cool-cat.jpg" onclick="openModal();currentSlide(2)" style="width:50%"
+                        alt="A very cool cat" class="image-shadow">
+                </div>
+                <div>
+                    <img src="assets/images/cool-bear.jpg" onclick="openModal();currentSlide(3)" style="width:50%"
+                        alt="A very cool bear" class="image-shadow">
+                </div>
+                <div>
+                    <img src="assets/images/cool-ape.jpg" onclick="openModal();currentSlide(4)" style="width:50%"
+                        alt="A very cool ape" class="image-shadow">
                 </div>
             </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="assets/images/cool-dog.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="assets/images/cool-cat.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="assets/images/cool-bear.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="assets/images/cool-ape.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </section>
-    
+
         <section class="square_2">
             <canvas id="canvasClock" width="300" height="300"></canvas>
         </section>
-    
+
         <section class="square_3">
             <div class="calculator">
                 <input type="text" class="calculator-screen" value="" disabled />
@@ -56,16 +97,17 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="square_4">
             <p>Toggle dark/lightmode</p>
-            <button type="button" class="tglButton" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">☼</button>
+            <button type="button" class="tglButton" name="dark_light" onclick="toggleDarkLight()"
+                title="Toggle dark/light mode">☼</button>
         </section>
-    
+
         <section class="square_5">
             <p></p>
         </section>
-    
+
         <section class="square_6">
             <h3>Mooshroom Klickare</h3>
             <p class="total">0</p>
