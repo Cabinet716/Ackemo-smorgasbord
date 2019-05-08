@@ -1,8 +1,3 @@
-/**************************Lightbox**********************************/
-function openModal() {}
-
-/********************************************************************/
-
 /**************************Analog Clock******************************/
 var canvas = document.getElementById('canvasClock');
 var ctx = canvas.getContext('2d'); // ctx = context
@@ -81,6 +76,25 @@ function drawHand(ctx, pos, length, width) {
 	ctx.rotate(-pos);
 }
 /*********************************************************************/
+
+/**************************Lightbox**********************************/
+document.getElementById("clickme").addEventListener("click", function() {
+	document.getElementById("lightbox").className = "open";
+  });
+  
+  document.getElementById("close").addEventListener("click", function() {
+	document.getElementById("lightbox").className = "";
+  });
+  
+  document.getElementById("lightbox").addEventListener("click", function(e) {
+	if (e.target.id == "lightbox") {
+	  document.getElementById("lightbox").className = "";
+	}
+  });
+
+/********************************************************************/
+
+
 
 /**********************Calculator*************************************/
 const calculator = {

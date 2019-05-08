@@ -15,55 +15,20 @@
 <body id="body" class="dark-mode">
     <div class="wrapper">
         <section class="square_1">
-            <div class="images-row-1">
-                <div>
-                    <img src="assets/images/cool-dog.jpg" onclick="openModal();currentSlide(1)" style="width:50%"
-                        alt="A very cool dog" class="image-shadow">
-                </div>
-                <div>
-                    <img src="assets/images/cool-cat.jpg" onclick="openModal();currentSlide(2)" style="width:50%"
-                        alt="A very cool cat" class="image-shadow">
-                </div>
-                <div>
-                    <img src="assets/images/cool-bear.jpg" onclick="openModal();currentSlide(3)" style="width:50%"
-                        alt="A very cool bear" class="image-shadow">
-                </div>
-                <div>
-                    <img src="assets/images/cool-ape.jpg" onclick="openModal();currentSlide(4)" style="width:50%"
-                        alt="A very cool ape" class="image-shadow">
-                </div>
-            </div>
-
-            <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 4</div>
-                        <img src="assets/images/cool-dog.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 4</div>
-                        <img src="assets/images/cool-cat.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 4</div>
-                        <img src="assets/images/cool-bear.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 4</div>
-                        <img src="assets/images/cool-ape.jpg" style="width:100%">
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <canvas id="canvasClock" width="300" height="300"></canvas>
         </section>
 
         <section class="square_2">
-            <canvas id="canvasClock" width="300" height="300"></canvas>
+            <button id="clickme">Open Lightbox</button>
+
+            <div id="lightbox">
+              <div id="lightbox_content">
+                <div id="close">&times;</div>
+                <button class="prev"><</button>
+                <button class="next">></button>
+                
+              </div>
+            </div>
         </section>
 
         <section class="square_3">
