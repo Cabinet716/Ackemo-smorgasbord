@@ -102,19 +102,16 @@ body.light-mode .tglButton {
 
 .loginText {
 	grid-area: a1;
-	background: red;
 }
 
 .passText {
 	grid-area: a2;
-	background: red;
 }
 .login {
 	grid-area: b1;
 	width: 20%;
 	margin-left: 40%;
 	height: auto;
-	background: blue;
 	text-align: center;
 }
 .register {
@@ -122,7 +119,6 @@ body.light-mode .tglButton {
 	width: 20%;
 	margin-left: 40%;
 	height: auto;
-	background: blue;
 	text-align: center;
 }
 
@@ -200,17 +196,32 @@ body.light-mode .tglButton {
 	grid-gap: 20px;
 	padding: 20px;
 }
-.square_6 h3 {
-	margin-top: 0;
-}
-
-.mush {
-	width: 50%;
-	height: 50%;
-}
 
 .tglButton {
 	font-size: 2vmax;
 	padding-left: 50px;
 	padding-right: 50px;
+}
+
+.square_5 {
+	display: flex;
+}
+
+.pic {
+	height: 350px;
+	width: 405px;
+}
+
+.square_6 h3 {
+	margin-top: 0;
+}
+
+.square_6 p {
+	margin-left: -20%;
+}
+
+.mush {
+	width: 50%;
+	height: 50%;
+	margin-left: -20%;
 }

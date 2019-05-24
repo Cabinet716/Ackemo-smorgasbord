@@ -19,7 +19,7 @@
         </section>
 
         <section class="square_2">
-            <button id="clickme">Open Lightbox</button>
+            <button id="clickme">Login</button>
 
             <div id="lightbox">
               <div id="lightbox_content">
@@ -72,14 +72,20 @@
                 title="Toggle dark/light mode">☼</button>
         </section>
 
-        <section class="square_5">
-            <p></p>
-        </section>
+        <nav class="square_5">
+            <button class="leftBtn" onclick="plusDivs(-1)">&#10094;</button>
+            <img class="pic" src="assets/images/cool-ape.jpg">
+            <img class="pic" src="assets/images/cool-bear.jpg">
+            <img class="pic" src="assets/images/cool-cat.jpg">
+            <img class="pic" src="assets/images/cool-dog.jpg">
+            
+            <button class="rightBtn" onclick="plusDivs(1)">&#10095;</button>
+        </nav>
 
         <section class="square_6">
             <h3>Mooshroom Klickare</h3>
             <p class="total">0</p>
-            <img class="mush" src="assets/images/Shrom.png" alt="Mooshrooom">
+            <img src="assets/images/Shrom.png" alt="Mooshrooom" id="mushPic">
         </section>
     </div>
     <script src="assets/js/playground.js"></script>
