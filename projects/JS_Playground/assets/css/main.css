@@ -46,13 +46,17 @@ body.light-mode .tglButton {
 	width: 450px;
 	box-shadow: 10px 10px rgba(0, 0, 0, 0.534);
 	background: rgb(255, 255, 0);
-	font-size: 2vmax;
 	display: block;
 	color: black;
 	text-decoration: none;
 	text-align: center;
 	padding-bottom: 25px;
 	padding-top: 25px;
+}
+
+#clickme {
+	font-size: 2vmax;
+	margin-top: 20%;
 }
 #lightbox {
 	position: fixed;
@@ -197,6 +201,10 @@ body.light-mode .tglButton {
 	padding: 20px;
 }
 
+.square_4 p {
+	font-size: 2vmax;
+}
+
 .tglButton {
 	font-size: 2vmax;
 	padding-left: 50px;
@@ -212,16 +220,32 @@ body.light-mode .tglButton {
 	width: 405px;
 }
 
-.square_6 h3 {
-	margin-top: 0;
-}
-
 .square_6 p {
 	margin-left: -20%;
+	font-style: oblique;
+}
+
+#ttlClicks {
+	font-size: 2vmax;
+	margin-bottom: -5%;
+}
+
+.game {
+	display: flex;
+	margin-top: -5%;
 }
 
 .mush {
 	width: 50%;
 	height: 50%;
-	margin-left: -20%;
+	margin-left: 0;
+}
+
+.powerups {
+	height: 70px;
+	width: 20%;
+	border-radius: 40%;
+	text-align: center;
+	font-size: 90%;
+	margin: 2%;
 }
