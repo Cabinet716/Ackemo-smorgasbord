@@ -240,58 +240,55 @@ var shroomsPS = 0;
 var shroomsPC = 1;
 var pickerCost = 5;
 var powerCost = 10;
-var amount = document.getElementById("ttlClicks");
-var mushroomPsTxt = document.getElementById("shroomsPsTxt")
-var mushroom = document.getElementById("mushPic");
-var picker = document.getElementById("picker")
-var pickerTxt = document.getElementById("picker_cost");
-var power = document.getElementById("power");
-var powerTxt = document.getElementById("power_cost")
+var amount = document.getElementById('ttlClicks');
+var mushroomPsTxt = document.getElementById('shroomsPsTxt');
+var mushroom = document.getElementById('mushPic');
+var picker = document.getElementById('picker');
+var pickerTxt = document.getElementById('picker_cost');
+var power = document.getElementById('power');
+var powerTxt = document.getElementById('power_cost');
 var start = false;
 var end = false;
 var high = false;
 picker.disabled = true;
 power.disabled = true;
 
-
-mushroom.addEventListener("click", function(){
+mushroom.addEventListener('click', function() {
 	shrooms += shroomsPC;
 });
 
-picker.addEventListener("click", function(){
+picker.addEventListener('click', function() {
 	shroomsPS += 1;
 	shrooms -= pickerCost;
-	pickerCost = pickerCost * 1.5;	
+	pickerCost = pickerCost * 1.5;
 });
 
-power.addEventListener("click", function(){
+power.addEventListener('click', function() {
 	shroomsPC += 2;
 	shroomsPS += 5;
 	shrooms -= powerCost;
 	powerCost = powerCost * 3;
 });
 
-setInterval(function totShrooms(){
+setInterval(function totShrooms() {
 	amount.innerHTML = shrooms;
 	pickerTxt.innerHTML = pickerCost;
 	powerTxt.innerHTML = powerCost;
-	mushroomPsTxt.innerHTML = "You earn " + shroomsPS +" per second!";
+	mushroomPsTxt.innerHTML = 'You earn ' + shroomsPS + ' per second!';
 	shrooms = parseInt(shrooms);
 	pickerCost = parseInt(pickerCost);
 	powerCost = parseInt(powerCost);
-	if(pickerCost > shrooms)
-	picker.disabled = true;
+	if (pickerCost > shrooms) picker.disabled = true;
 	else {
 		picker.disabled = false;
 	}
-	if(powerCost > shrooms)
-	power.disabled = true;
+	if (powerCost > shrooms) power.disabled = true;
 	else {
 		power.disabled = false;
-	}	
-},1);
+	}
+}, 1);
 
-setInterval(function shroomPS(){
+setInterval(function shroomPS() {
 	shrooms += shroomsPS;
 }, 1000);
 /*********************************************************************/
